@@ -1,3 +1,307 @@
-a {
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2196f3;
+  --darkgrey: #2f303a;
+  --grey: #757575;
+  --lightgrey: #e5e5e5;
+  --notblack: #212121;
+  --notwhite: #f5f4fa;
+  --footerlinks: #ffffff99;
+  --productborder: #eeeeee;
+}
+
+/* Global styles for whole website */
+
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  color: var(--grey);
+  background-color: var(--white);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+/* poczatek header */
+
+.header {
+  flex-direction: row;
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  border: 1px solid #ececec;
+}
+.link-no-underline {
   text-decoration: none;
+}
+.logo-style {
+  font-family: 'Raleway';
+  color: var(--black);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.193;
+  letter-spacing: 0.03em;
+}
+.logo-header {
+  padding: 25px 0px 24px 215px;
+}
+.blue-text {
+  color: var(--blue);
+}
+.blue-text:hover,
+.blue-text:focus {
+  color: var(--blue);
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  line-height: 1.2;
+  margin: 0;
+}
+.nav-style {
+  gap: 46px;
+  line-height: 1.2;
+  padding: 32px 0px 32px 93px;
+}
+.link-style {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--notblack);
+}
+.contact-style {
+  gap: 50px;
+  padding: 32px 0px 32px 371px;
+  margin: 0;
+}
+.contact-link-style {
+  color: var(--grey);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+/* koniec header */
+/* zamow usluge box */
+.top-section {
+  background-color: var(--darkgrey);
+  color: var(--white);
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+}
+.top-section-text {
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  margin: 0px auto;
+}
+.order-service-button {
+  background-color: var(--blue);
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--white);
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* koniec zamow usluge box */
+/* poczatek Lorem ipsum list */
+.lorem-section {
+  width: 1170px;
+  height: 101px;
+  margin: 94px 215px 94px 215px;
+}
+.lorem-section-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+.lorem-heading {
+  color: var(--notblack);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0px auto;
+}
+.lorem-item-text {
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  color: var(--grey);
+}
+.word-wrap {
+  word-wrap: break-word;
+  width: 270px;
+  height: 75px;
+}
+/* koniec sekcji lorem */
+/* poczatek sekcji czym sie zajmujemy */
+.specializations {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--notblack);
+  padding-bottom: 50px;
+}
+.specializations-items {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+/* koniec sekcji czym sie zajmujemy */
+/* poczatek sekcji our team */
+.ourteam-section {
+  background-color: var(--notwhite);
+  width: 1600px;
+  height: 648px;
+}
+.ourteam-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--notblack);
+  padding: 94px 0 50px 0;
+  margin: 0px auto;
+}
+.ourteam-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 0px 0px 94px 0px;
+}
+.ourteam-item {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.ourteam-item-heading {
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--notblack);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  padding: 30px 0px 10px 0px;
+  margin: 0px auto;
+}
+.ourteam-item-text {
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  padding: 0px 0px 30px 0px;
+  margin: 0px auto;
+}
+/* koniec sekcji our team */
+/* footer */
+.footer-container {
+  width: 1600px;
+  height: 252px;
+  background-color: var(--darkgrey);
+  width: 100%;
+}
+.footer {
+  padding-left: 215px;
+  padding-top: 68px;
+}
+.logo-footer {
+  color: var(--white);
+}
+.address-footer {
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--white);
+  font-style: normal;
+  padding-top: 20px;
+}
+.contact-footer {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 9px;
+  padding-left: 0px;
+  margin: 0px auto;
+}
+.contact-footer-item {
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--grey);
+}
+/* Koniec footer */
+/* Portfolio page */
+.btn-style {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 94px;
+  list-style: none;
+}
+.btn {
+  background-color: var(--notwhite);
+  border-width: 0;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 3px;
+  padding: 6px 22px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--blue);
+  color: var(--white);
+}
+.portfolio-element {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  list-style: none;
+  padding-left: 215px;
+}
+.portfolio-item {
+  border: var(--productborder) solid 1px;
+  width: 370px;
+  height: 404px;
 }
