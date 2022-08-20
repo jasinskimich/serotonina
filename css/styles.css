@@ -42,10 +42,9 @@ body {
   font-weight: 700;
   line-height: 1.193;
   text-decoration: none;
+  padding: 25px 0px 24px 215px
 }
-.logo-header {
-  padding: 25px 0px 24px 215px;
-}
+
 .blue-text {
   color: var(--blue);
 }
