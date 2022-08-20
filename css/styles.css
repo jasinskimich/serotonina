@@ -18,15 +18,13 @@ body {
   color: var(--grey);
   background-color: var(--white);
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-}
-.wrapper {
   width: 1600px;
-  margin: 0 auto;
-  background-color: var(--white);
 }
+
 /* poczatek header */
 
 .header {
@@ -45,7 +43,6 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.193;
-  letter-spacing: 0.03em;
 }
 .logo-header {
   padding: 25px 0px 24px 215px;
@@ -136,16 +133,13 @@ body {
 .lorem-heading {
   color: var(--notblack);
   font-weight: 700;
-  font-size: 14px;
+
   line-height: 1.1428;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   margin: 0px auto;
 }
 .lorem-item-text {
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.7142;
   color: var(--grey);
 }
@@ -161,7 +155,7 @@ body {
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--notblack);
   padding-bottom: 50px;
 }
@@ -185,7 +179,7 @@ body {
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--notblack);
   padding: 94px 0 50px 0;
   margin: 0px auto;
@@ -218,7 +212,7 @@ body {
 .ourteam-item-text {
   text-align: center;
   letter-spacing: 0.03em;
-  font-weight: 400;
+
   font-size: 16px;
   line-height: 1.1875;
   padding: 0px 0px 30px 0px;
@@ -240,9 +234,6 @@ body {
   color: var(--white);
 }
 .address-footer {
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.714;
   color: var(--white);
   font-style: normal;
@@ -257,20 +248,21 @@ body {
   margin: 0px auto;
 }
 .contact-footer-item {
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.714;
   color: var(--grey);
 }
 /* Koniec footer */
 /* Portfolio page */
+.portfolio-section {
+  margin: 94px 215px;
+}
 .btn-style {
   display: flex;
-  justify-content: center;
+
   gap: 8px;
-  margin-top: 94px;
+  margin: 0px;
   list-style: none;
+  padding-left: 295px;
 }
 .btn {
   background-color: var(--notwhite);
@@ -278,7 +270,7 @@ body {
   height: 38px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.625;
   border-radius: 3px;
   padding: 6px 22px;
   font-family: 'Roboto';
@@ -295,13 +287,31 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 94px;
+  margin: 0px;
   list-style: none;
-  padding-left: 215px;
+  padding-left: 0px;
+  padding-top: 56px;
+  width: 1170px;
 }
 .portfolio-item {
   border: var(--productborder) solid 1px;
-  width: 370px;
-  height: 404px;
+  width: 368px;
+  height: 402px;
+}
+.portfolio-item-heading {
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--notblack);
+  margin: 0px;
+  padding: 20px 24px 4px 24px;
+  text-align: left;
+}
+.portfolio-item-text {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--grey);
+  margin: 0px;
+  padding: 0px 24px 20px 24px;
 }
