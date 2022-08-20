@@ -34,15 +34,14 @@ body {
   height: 80px;
   border: 1px solid #ececec;
 }
-.link-no-underline {
-  text-decoration: none;
-}
+
 .logo-style {
   font-family: 'Raleway';
   color: var(--black);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.193;
+  text-decoration: none;
 }
 .logo-header {
   padding: 25px 0px 24px 215px;
@@ -70,17 +69,20 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: var(--notblack);
+  text-decoration: none;
 }
 .contact-style {
   gap: 50px;
   padding: 32px 0px 32px 371px;
   margin: 0;
+  ;
 }
 .contact-link-style {
   color: var(--grey);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  text-decoration: none
 }
 /* koniec header */
 /* zamow usluge box */
@@ -118,19 +120,19 @@ body {
 }
 /* koniec zamow usluge box */
 /* poczatek Lorem ipsum list */
-.lorem-section {
+.major-section {
   width: 1170px;
   height: 101px;
   margin: 94px 215px 94px 215px;
 }
-.lorem-section-list {
+.major-section-list {
   display: flex;
   list-style: none;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
 }
-.lorem-heading {
+.major-heading {
   color: var(--notblack);
   font-weight: 700;
 
@@ -139,7 +141,7 @@ body {
   text-transform: uppercase;
   margin: 0px auto;
 }
-.lorem-item-text {
+.major-item-text {
   line-height: 1.7142;
   color: var(--grey);
 }
@@ -225,11 +227,10 @@ body {
   height: 252px;
   background-color: var(--darkgrey);
   width: 100%;
-}
-.footer {
   padding-left: 215px;
   padding-top: 68px;
 }
+
 .logo-footer {
   color: var(--white);
 }
@@ -238,18 +239,15 @@ body {
   color: var(--white);
   font-style: normal;
   padding-top: 20px;
-}
-.contact-footer {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
   gap: 9px;
-  padding-left: 0px;
-  margin: 0px auto;
+  width: 246px;
+  height: 81px;
 }
+
 .contact-footer-item {
   line-height: 1.714;
   color: var(--grey);
+  text-decoration: none;
 }
 /* Koniec footer */
 /* Portfolio page */
