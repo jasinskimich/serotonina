@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,12 +18,10 @@
     />
   </head>
   <body>
-    <header class="header">
-      <a href="./index.html" class="link-no-underline logo-style "
-        ><span class="blue-text">Web</span>Studio
-      </a>
+    <header class="header container">
+      <a href="./index.html" class="logo-style"><span class="blue-text">Web</span>Studio </a>
       <nav>
-        <ul class="nav-list nav-style">
+        <ul class="nav-list">
           <li>
             <a href="./index.html" class="link-style blue-text">Agencja </a>
           </li>
@@ -31,7 +33,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contact-style nav-list">
+      <ul class="contact-style">
         <li>
           <a href="mailto:info@devstudio.com" class="contact-link-style blue-text"
             >info@devstudio.com
@@ -43,15 +45,13 @@
       </ul>
     </header>
     <main>
-      <div>
-        <section class="top-section">
-          <h1 class="top-section-text">
-            EFEKTYWNE ROZWIĄZANIA <br />
-            DLA WASZEGO BIZNESU
-          </h1>
-          <button type="button" class="order-service-button">Zamów usługe</button>
-        </section>
-      </div>
+      <section class="top-section containter">
+        <h1 class="top-section-text">
+          EFEKTYWNE ROZWIĄZANIA <br />
+          DLA WASZEGO BIZNESU
+        </h1>
+        <button type="button" class="order-service-button">Zamów usługe</button>
+      </section>
       <section class="major-section">
         <ul class="major-section-list">
           <li>
