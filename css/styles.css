@@ -36,7 +36,7 @@ a {
 /* poczatek header */
 
 .header {
-  flex-direction: row;
+ 
   display: flex;
   border-bottom: 1px solid #ececec;
 }
@@ -75,7 +75,7 @@ a {
   gap: 50px;
   display: flex;
   list-style: none;
-  
+
   margin: 0;
   padding: 32px 27px 31px 371px;
 }
@@ -120,36 +120,31 @@ a {
 }
 /* koniec zamow usluge box */
 /* poczatek Lorem ipsum list */
-.major-section {
-  width: 1170px;
-  height: 101px;
-  margin: 94px 215px 94px 215px;
-}
+
 .major-section-list {
   display: flex;
   list-style: none;
-  flex-direction: row;
   gap: 30px;
   justify-content: center;
+  margin: 0;
+  padding: 94px 15px;
 }
 .major-heading {
   color: var(--notblack);
   font-weight: 700;
-
-  line-height: 1.1428;
-
+  line-height: 1.14285714;
   text-transform: uppercase;
   margin: 0px auto;
+  font-size: 14px;
 }
 .major-item-text {
-  line-height: 1.7142;
+  line-height: 1.71428571;
   color: var(--grey);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 3px;
 }
-.word-wrap {
-  word-wrap: break-word;
-  width: 270px;
-  height: 75px;
-}
+
 /* koniec sekcji lorem */
 /* poczatek sekcji czym sie zajmujemy */
 .specializations {
@@ -157,34 +152,33 @@ a {
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-
   color: var(--notblack);
-  padding-bottom: 50px;
+  margin: 0 auto;
+  padding: 0 424px 50px;
 }
 .specializations-items {
   display: flex;
   list-style: none;
-  flex-direction: row;
   gap: 30px;
   justify-content: center;
-  margin-bottom: 94px;
+  margin: 0;
+  padding: 0 15px 94px;
 }
+
+
 /* koniec sekcji czym sie zajmujemy */
 /* poczatek sekcji our team */
 .ourteam-section {
   background-color: var(--notwhite);
-  width: 1600px;
-  height: 648px;
+  
 }
 .ourteam-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-
   color: var(--notblack);
-  padding: 94px 0 50px 0;
-  margin: 0px auto;
+ margin:0;
 }
 .ourteam-list {
   display: flex;
@@ -192,8 +186,7 @@ a {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
-  margin: 0px auto;
-  padding: 0px 0px 94px 0px;
+  
 }
 .ourteam-item {
   background-color: var(--white);
@@ -208,8 +201,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  padding: 30px 0px 10px 0px;
-  margin: 0px auto;
+  
 }
 .ourteam-item-text {
   text-align: center;
@@ -217,8 +209,7 @@ a {
 
   font-size: 16px;
   line-height: 1.1875;
-  padding: 0px 0px 30px 0px;
-  margin: 0px auto;
+ 
 }
 /* koniec sekcji our team */
 /* footer */
