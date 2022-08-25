@@ -224,7 +224,7 @@ img {
 }
 .logo-style-footer {
   font-family: 'Raleway';
-  color: var(--black);
+  color: var(--white);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19230769;
@@ -233,20 +233,23 @@ img {
   padding-bottom: 20px;
   display: block;
 }
-.logo-footer {
-  color: var(--white);
-}
+
 .address-footer {
   line-height: 1.714;
   color: var(--white);
   font-style: normal;
+  margin: 0;
+}
+.contact-list-footer {
+  list-style: none;
+  margin: 0px;
   gap: 9px;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  padding-left: 0px;
   padding-bottom: 62px;
+  font-style: normal;
 }
-
 .contact-footer-item {
   line-height: 1.714;
   color: var(--grey);
@@ -286,10 +289,10 @@ img {
   flex-wrap: wrap;
   margin: 0px;
   list-style: none;
-  padding: 0 12px 93px;
+  padding: 0 15px 94px;
 }
 .portfolio-item {
-  border: 1px solid var(--productborder);
+  border-bottom: 1px solid var(--productborder);
 }
 .portfolio-item-heading {
   letter-spacing: 0.06em;
