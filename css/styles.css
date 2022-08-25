@@ -39,6 +39,7 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+  margin: 0px;
 }
 
 .header-style {
@@ -46,13 +47,16 @@ img {
 }
 .logo-style {
   font-family: 'Raleway';
-  color: var(--black);
-  font-size: 26px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.19230769;
-  padding: 24px 0 24px 15px;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--black);
 }
-
+.logo-box {
+  padding-top: 24px;
+}
 .blue-text {
   color: var(--blue);
 }
@@ -230,7 +234,7 @@ img {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--white);
-  
+
   margin: 0px;
 }
 .logo-style-footer {
@@ -242,7 +246,7 @@ img {
   flex-direction: column;
   padding-left: 0px;
   gap: 9px;
- padding-top: 20px;
+  padding-top: 20px;
   font-style: normal;
   color: var(--white);
   margin: 0;
