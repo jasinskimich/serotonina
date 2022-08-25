@@ -38,10 +38,12 @@ img {
 /* poczatek header */
 
 .header {
-  display: flex;
   border-bottom: 1px solid #ececec;
 }
 
+.header-style {
+  display: flex;
+}
 .logo-style {
   font-family: 'Raleway';
   color: var(--black);
@@ -53,7 +55,6 @@ img {
 
 .blue-text {
   color: var(--blue);
-  
 }
 .blue-text:hover,
 .blue-text:focus {
@@ -220,7 +221,6 @@ img {
 /* footer */
 .footer {
   background-color: var(--darkgrey);
-  
 }
 .logo-style-footer {
   font-family: 'Raleway';
@@ -228,10 +228,10 @@ img {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19230769;
- margin:0;
- padding-top: 66px;
- padding-bottom: 20px;
- display: block;
+  margin: 0;
+  padding-top: 66px;
+  padding-bottom: 20px;
+  display: block;
 }
 .logo-footer {
   color: var(--white);
@@ -243,8 +243,8 @@ img {
   gap: 9px;
   display: flex;
   flex-direction: column;
- margin: 0;
- padding-bottom: 62px;
+  margin: 0;
+  padding-bottom: 62px;
 }
 
 .contact-footer-item {
@@ -253,16 +253,13 @@ img {
 }
 /* Koniec footer */
 /* Portfolio page */
-.portfolio-section {
-  margin: 94px 215px;
-}
+
 .btn-style {
   display: flex;
-
   gap: 8px;
   margin: 0px;
   list-style: none;
-  padding-left: 295px;
+  padding: 94px 318px 50px 310px;
 }
 .btn {
   background-color: var(--notwhite);
@@ -289,14 +286,10 @@ img {
   flex-wrap: wrap;
   margin: 0px;
   list-style: none;
-  padding-left: 0px;
-  padding-top: 56px;
-  width: 1170px;
+  padding: 0 12px 93px;
 }
 .portfolio-item {
   border: 1px solid var(--productborder);
-  width: 370px;
-  height: 404px;
 }
 .portfolio-item-heading {
   letter-spacing: 0.06em;
@@ -305,7 +298,7 @@ img {
   line-height: 2;
   color: var(--notblack);
   margin: 0px;
-  padding: 20px 24px 4px 24px;
+  padding: 20px 24px 4px;
   text-align: left;
 }
 .portfolio-item-text {
@@ -313,6 +306,29 @@ img {
   line-height: 1.875;
   color: var(--grey);
   margin: 0px;
-  padding: 0px 24px 20px 24px;
+  padding: 0 24px 20px;
+}
+.logo-style-footer-portfolio {
+  font-family: 'Raleway';
+  color: var(--white);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19230769;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  display: block;
+}
+.address-footer-portfolio {
+  line-height: 1.714;
+  color: var(--white);
+  font-style: normal;
+  gap: 9px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 15px;
+  padding-bottom: 60px;
 }
 /* Koniec czesci portfolio */
