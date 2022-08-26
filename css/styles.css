@@ -22,7 +22,7 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  width: 1600px;
+  
 }
 a {
   text-decoration: none;
@@ -79,6 +79,7 @@ img {
   line-height: 1.14285714;
   color: var(--notblack);
 }
+.nav-enter-item{color: var(--blue);}
 .contact-style {
   gap: 50px;
   display: flex;
@@ -236,7 +237,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1,19230769;
   letter-spacing: 0.03em;
   color: var(--white);
   margin: 0px;
