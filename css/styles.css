@@ -136,6 +136,7 @@ img {
   margin: 0;
   padding: 94px 15px;
 }
+
 .major-heading {
   color: var(--notblack);
   font-weight: 700;
@@ -194,7 +195,7 @@ img {
   gap: 30px;
   justify-content: center;
   margin: 0;
-  padding: 0 15px 102px;
+  padding: 0 15px 94px;
 }
 .ourteam-item {
   background-color: var(--white);
@@ -347,7 +348,7 @@ img {
 
 .footer-container-style {
   padding: 60px 0;
-  
+  padding-top: 60px;
 }
 
 /* Koniec czesci portfolio */
