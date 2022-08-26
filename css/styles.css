@@ -45,6 +45,9 @@ img {
 .header-style {
   display: flex;
 }
+.logo-box {
+  padding-top: 24px;
+}
 .logo-style {
   font-family: 'Raleway';
   font-style: normal;
@@ -54,9 +57,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--black);
 }
-.logo-box {
-  padding-top: 24px;
-}
+
 .blue-text {
   color: var(--blue);
 }
@@ -82,7 +83,6 @@ img {
   gap: 50px;
   display: flex;
   list-style: none;
-
   margin: 0;
   padding: 32px 27px 31px 371px;
 }
@@ -226,6 +226,10 @@ img {
 .footer {
   background-color: var(--darkgrey);
 }
+.logo-style-footer {
+  padding-top: 66px;
+  padding-bottom: 62px;
+}
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
@@ -234,12 +238,9 @@ img {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--white);
-
   margin: 0px;
 }
-.logo-style-footer {
-  padding-top: 66px;
-}
+
 .footer-address-list {
   display: flex;
   list-style: none;
@@ -312,6 +313,8 @@ img {
   margin: 0px;
   padding: 0 24px 20px;
 }
+/* koniec portfolio page */
+/* porftolio footer */
 .logo-style-footer-portfolio {
   font-family: 'Raleway';
   color: var(--white);
@@ -321,15 +324,6 @@ img {
   margin: 0;
   padding-left: 15px;
   display: inline-block;
-}
-.address-footer-portfolio {
-  line-height: 1.714;
-  color: var(--white);
-  font-style: normal;
-  gap: 9px;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
 }
 .contact-list-footer-portfolio {
   list-style: none;
@@ -341,8 +335,19 @@ img {
   padding-top: 20px;
   font-style: normal;
 }
-.logo-style-footer {
-  padding-bottom: 60px;
+.address-footer-portfolio {
+  line-height: 1.714;
+  color: var(--white);
+  font-style: normal;
+  gap: 9px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.footer-container-style {
+  padding: 60px 0;
+  
 }
 
 /* Koniec czesci portfolio */
