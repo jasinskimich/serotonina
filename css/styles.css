@@ -103,13 +103,13 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 200px;
+  height: 600px;
 }
 .top-section-text {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 200px 0 30px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36363636;
