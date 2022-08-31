@@ -22,7 +22,6 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  
 }
 a {
   text-decoration: none;
@@ -79,13 +78,15 @@ img {
   line-height: 1.14285714;
   color: var(--notblack);
 }
-.nav-enter-item{color: var(--blue);}
+.nav-enter-item {
+  color: var(--blue);
+}
 .contact-style {
-  gap: 50px;
+  gap: 30px;
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 32px 27px 31px 371px;
+  padding: 32px 27px 31px 345px;
 }
 .contact-link-style {
   color: var(--grey);
@@ -93,6 +94,20 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.14285714;
 }
+.icons-header {
+  fill: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons-header:focus,
+.icons-header:hover {
+  fill: var(--blue);
+}
+.icon-header-spacing {
+  margin-right: 10px;
+}
+
 /* koniec header */
 /* zamow usluge box */
 .top-section {
@@ -110,7 +125,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-bottom: 30px;
-  
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36363636;
@@ -139,7 +154,6 @@ img {
   padding: 94px 15px;
 }
 
-
 .major-heading {
   color: var(--notblack);
   font-weight: 700;
@@ -154,6 +168,15 @@ img {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 3px;
+}
+.icons-box {
+  background-color: var(--notwhite);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.icons-major {
+  margin: 25px 100px;
 }
 
 /* koniec sekcji lorem */
@@ -239,7 +262,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1,19230769;
+  line-height: 1, 19230769;
   letter-spacing: 0.03em;
   color: var(--white);
   margin: 0px;
