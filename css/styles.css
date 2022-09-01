@@ -9,6 +9,7 @@
   --notwhite: #f5f4fa;
   --footerlinks: #ffffff99;
   --productborder: #eeeeee;
+  --iconcolor: #afb1b8;
 }
 
 /* Global styles for whole website */
@@ -119,6 +120,7 @@ img {
   align-items: center;
   width: 100%;
   height: 600px;
+  background-image: url(./images/backgroundimage.jpg)
 }
 .top-section-text {
   text-align: center;
@@ -246,9 +248,58 @@ img {
   font-size: 16px;
   line-height: 1.1875;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+}
+.team-card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.team-card-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+  fill: var(--iconcolor);
+}
+.team-card-icon:focus,
+.team-card-icon:hover {
+  fill: var(--white);
+  background-color: var(--blue);
 }
 /* koniec sekcji our team */
+/* nasi klienci */
+.ourclients-heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--notblack);
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.ourclients-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 94px 0;
+}
+.ourclients-logo {
+  border-radius: 4px;
+  border: var(--iconcolor) solid 1px;
+  width: 170px;
+  height: 92px;
+  fill: var(--iconcolor);
+}
+.ourclients-logo:hover {
+  fill: var(--blue);
+  border: var(--blue) solid 1px;
+}
+/* koniec nasi klienci */
 /* footer */
 .footer {
   background-color: var(--darkgrey);
@@ -282,7 +333,34 @@ img {
 .contact-footer-item {
   color: var(--footerlinks);
 }
-
+.footer-items {
+  display: flex;
+}
+.footer-social-section {
+  padding-top: 72px;
+  padding-left: 70px;
+}
+.footer-social-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0;
+  padding-bottom: 20px;
+}
+.social-icon-footer {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--white);
+}
+.social-icon-footer:focus,
+.social-icon-footer:hover {
+  background-color: var(--blue);
+}
 /* Koniec footer */
 /* Portfolio page */
 
