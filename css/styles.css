@@ -120,7 +120,7 @@ img {
   align-items: center;
   width: 100%;
   height: 600px;
-  background-image: url(./images/backgroundimage.jpg)
+  background-image: url(https://github.com/jasinskimich/goit-markup-hw-04/blob/main/images/backgroundimage.jpg?raw=true;);
 }
 .top-section-text {
   text-align: center;
@@ -401,6 +401,11 @@ img {
 .portfolio-item {
   border-bottom: 1px solid var(--productborder);
 }
+.portfolio-item:focus,
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-item-heading {
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -452,7 +457,6 @@ img {
 
 .footer-container-style {
   padding: 60px 0;
-  padding-top: 60px;
 }
 
 /* Koniec czesci portfolio */
