@@ -120,7 +120,8 @@ img {
   align-items: center;
   width: 100%;
   height: 600px;
-  background: linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3) ), url(../images/backgroundimage.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/backgroundimage.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -265,8 +266,8 @@ img {
   border-radius: 50%;
   fill: var(--iconcolor);
 }
-.team-card-icon:focus,
-.team-card-icon:hover {
+.team-card-icon:focus svg,
+.team-card-icon:hover svg {
   fill: var(--white);
   background-color: var(--blue);
 }
@@ -290,14 +291,18 @@ img {
   margin: 0;
   padding: 0 0 94px 0;
 }
-.ourclients-logo {
-  border-radius: 4px;
-  border: var(--iconcolor) solid 1px;
+.ourclients-logo-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  fill: var(--iconcolor);
 }
-.ourclients-logo:hover {
+.ourclients-logo {
+  fill: var(--iconcolor);
+  border: 1px solid var(--iconcolor);
+  border-radius: 4px;
+}
+.ourclients-logo-link:hover svg,
+.ourclients-logo-link:focus svg {
   fill: var(--blue);
   border: var(--blue) solid 1px;
 }
@@ -352,6 +357,13 @@ img {
   margin: 0;
   padding-bottom: 20px;
 }
+.social-media-list {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .social-icon-footer {
   width: 44px;
   height: 44px;
@@ -359,8 +371,9 @@ img {
   border-radius: 50%;
   fill: var(--white);
 }
-.social-icon-footer:focus,
-.social-icon-footer:hover {
+
+.footer-social-link:focus svg,
+.footer-social-link:hover svg {
   background-color: var(--blue);
 }
 /* Koniec footer */
