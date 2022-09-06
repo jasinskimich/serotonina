@@ -62,7 +62,7 @@
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button type="button" class="order-service-button">Zamów usługe</button>
+        <button type="button" class="order-service-button" data-modal-open>Zamów usługe</button>
       </section>
       <section class="container">
         <ul class="major-section-list">
@@ -516,5 +516,21 @@
         </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="close-modal-button">
+            <use
+              xlink:href="./images/icons.svg#icon-close-button"
+              width="11"
+              height="11"
+              x="4"
+              y="5"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
