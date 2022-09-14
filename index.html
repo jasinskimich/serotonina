@@ -28,7 +28,6 @@
             <a href="./portfolio.html" class="link-style blue-text">Portfolio </a>
 
             <a href="./index.html" class="link-style blue-text">Kontakt </a>
-            
           </nav>
         </div>
         <div class="contact-style">
@@ -513,6 +512,36 @@
             ></use>
           </svg>
         </button>
+        <h2 class="modal-heading">Zostaw swoje dane w formularzu poniżej</h2>
+
+        <form class="modal-forms">
+          <label for="name-box" class="label-box-heading"> Imie </label>
+          <input id="name-box" type="text" name="username" class="label-boxes" />
+
+          <label for="tel-box" class="label-box-heading"> Telefon </label>
+          <input id="tel-box" type="text" name="tel" class="label-boxes" />
+
+          <label for="email-box" class="label-box-heading"> Email </label>
+          <input id="emial-box" type="text" name="email" class="label-boxes" />
+
+          <label for="text-box" class="label-box-heading"> Komentarz</label>
+          <textarea
+            id="text-box"
+            name="feedback"
+            rows="5"
+            placeholder="Wprowadź tekst"
+            class="modal-box-text"
+          ></textarea>
+
+          <div class="modal-checkbox">
+            <input id="laws-box" type="checkbox" name="rules" value="laws" />
+            <label for="laws-box" class="laws-style">
+              Oświadczam iż akceptuję <a class="law-text">Regulamin</a> i <a class="law-text">Politykę Prywatności</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="submit-button">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
