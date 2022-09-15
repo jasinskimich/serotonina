@@ -497,6 +497,17 @@
             </a>
           </div>
         </section>
+        <div>
+          <form class="newsletter-form">
+            <label for="newsletter-box" class="newsletter-heading">Zapisz się do newslettera</label>
+            <div class="newsleter-order-section"> 
+            <input id="newsletter-box" type="text" name="email" placeholder="E-mail" class="newsletter-box"></input>
+            <button type="submit" class="newsletter-button"><span class="newsletter-button-space">Zapisz się</span> <svg class="newsletter-button-icon">
+              <use xlink:href="./images/icons.svg#icon-icon-send" width="24" height="24"></use>
+            </svg></button>
+          </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -515,14 +526,23 @@
         <h2 class="modal-heading">Zostaw swoje dane w formularzu poniżej</h2>
 
         <form class="modal-forms">
-          <label for="name-box" class="label-box-heading"> Imie </label>
+          <label for="name-box" class="label-box-heading"> Imie</label>
           <input id="name-box" type="text" name="username" class="label-boxes" />
+          <svg class="form-icons icon-position1">
+            <use xlink:href="./images/icons.svg#icon-person-modal" width="12" height="12"></use>
+          </svg>
 
           <label for="tel-box" class="label-box-heading"> Telefon </label>
-          <input id="tel-box" type="text" name="tel" class="label-boxes" />
+          <input id="tel-box" type="text" name="telphone-number" class="label-boxes" />
+          <svg class="form-icons icon-position2">
+            <use xlink:href="./images/icons.svg#icon-telephone-modal" width="13" height="13"></use>
+          </svg>
 
           <label for="email-box" class="label-box-heading"> Email </label>
           <input id="emial-box" type="text" name="email" class="label-boxes" />
+          <svg class="form-icons icon-position3">
+            <use xlink:href="./images/icons.svg#icon-envelope-modal" width="20" height="15"></use>
+          </svg>
 
           <label for="text-box" class="label-box-heading"> Komentarz</label>
           <textarea
@@ -534,9 +554,19 @@
           ></textarea>
 
           <div class="modal-checkbox">
-            <input id="laws-box" type="checkbox" name="rules" value="laws" />
             <label for="laws-box" class="laws-style">
-              Oświadczam iż akceptuję <a class="law-text">Regulamin</a> i <a class="law-text">Politykę Prywatności</a>.
+              <input
+                id="laws-box"
+                type="checkbox"
+                name="rules"
+                value="laws"
+                class="checkbox-style"
+              />
+              <svg class="tick">
+                <use xlink:href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+              Oświadczam iż akceptuję <a class="law-text" href="#">Regulamin</a> i
+              <a class="law-text" href="#">Politykę Prywatności</a>.
             </label>
           </div>
 
