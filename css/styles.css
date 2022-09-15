@@ -476,7 +476,6 @@ img {
   width: 24px;
   height: 24px;
   fill: var(--white);
-  
 }
 .newsletter-button:hover {
   background-color: #1a78c2;
@@ -484,8 +483,6 @@ img {
 .newsletter-button:active {
   background-color: #135a91;
 }
-
-
 
 /* Koniec footer */
 /* okno modalne */
@@ -678,7 +675,7 @@ input:checked + .tick {
 .form-icons {
   fill: var(--notblack);
   width: 20px;
-  height: 15px;
+  height: 18px;
   position: absolute;
 }
 .icon-position1 {
@@ -686,11 +683,11 @@ input:checked + .tick {
   left: 55px;
 }
 .icon-position2 {
-  top: 176px;
+  top: 174px;
   left: 55px;
 }
 .icon-position3 {
-  top: 243px;
+  top: 240px;
   left: 52px;
 }
 /* koniec okna modalnego */
