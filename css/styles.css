@@ -522,6 +522,14 @@ img {
   padding: 0;
   margin: 0;
 }
+.modal-button:hover {
+  background-color: var(--notwhite);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:active {
+  background-color: var(--lightgrey);
+  transition: bbackground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .close-modal-button {
   width: 18px;
   height: 18px;
