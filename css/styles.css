@@ -337,8 +337,8 @@ img {
 }
 .ourclients-logo-link {
   display: flex;
-  width: 170px;
-  height: 92px;
+  width: 155px;
+  height: 82px;
 }
 .ourclients-logo {
   fill: var(--iconcolor);
