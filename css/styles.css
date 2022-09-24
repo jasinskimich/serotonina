@@ -510,7 +510,7 @@ img {
   height: 581px;
   background-color: var(--white);
 }
-.modal-button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -523,15 +523,15 @@ img {
   padding: 0;
   margin: 0;
 }
-.modal-button:hover {
+.modal__button:hover {
   background-color: var(--notwhite);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:active {
+.modal__button:active {
   background-color: var(--lightgrey);
   transition: bbackground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-modal-button {
+.modal__button--close {
   width: 18px;
   height: 18px;
 }
@@ -540,7 +540,7 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-.modal-heading {
+.modal__heading {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -551,14 +551,13 @@ img {
   color: var(--notblack);
   padding-top: 40px;
 }
-.modal-forms {
+.modal__forms {
   display: flex;
   flex-direction: column;
   width: 448px;
-
   margin: 2px auto 0px;
 }
-.label-box-heading {
+.details__heading {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -568,30 +567,30 @@ img {
   padding-top: 10px;
   padding-bottom: 4px;
 }
-.label-boxes {
+.details {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
   outline: none;
   padding: 0 42px;
 }
-.label-boxes:active + svg,
-.label-boxes:focus + svg {
+.details:active + svg,
+.details:focus + svg {
   fill: var(--blue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-boxes:hover {
+.details:hover {
   border: 1px solid var(--blue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-boxes:active,
-.label-boxes:focus {
+.details:active,
+.details:focus {
   border: 2px solid var(--blue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0 41px;
 }
 
-.modal-box-text {
+.details__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
@@ -604,28 +603,28 @@ img {
   outline: none;
   resize: none;
 }
-.modal-box-text:hover {
+.details__comment:hover {
   border: 1px solid var(--blue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-box-text:active,
-.modal-box-text:focus {
+.details__comment:active,
+.details__comment:focus {
   border: 2px solid var(--blue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 11px 15px;
 }
 
-.modal-checkbox {
+.checkbox {
   display: flex;
   flex-direction: row;
   margin: 20px auto 30px;
   gap: 8px;
 }
-.checkbox-style {
+.checkbox--style {
   appearance: none;
   -webkit-apperance: none;
 }
-.laws-style {
+.checkbox__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -634,7 +633,7 @@ img {
   position: relative;
   padding-left: 20px;
 }
-.laws-style::before {
+.checkbox__label::before {
   position: absolute;
   width: 16px;
   height: 15px;
@@ -655,7 +654,7 @@ input:checked + .tick {
   cursor: pointer;
 }
 
-.tick {
+.checkbox__image {
   width: 16px;
   height: 16px;
   position: absolute;
@@ -664,15 +663,15 @@ input:checked + .tick {
   display: none;
 }
 
-.law-text {
+.checkbox__text {
   color: var(--blue);
   text-decoration: underline;
 }
-.law-text:hover {
+.checkbox__text:hover {
   text-decoration-thickness: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submit-button {
+.submit {
   border: 0px;
   border-radius: 4px;
   width: 200px;
@@ -690,43 +689,43 @@ input:checked + .tick {
   outline: none;
   border-color: var(--blue);
 }
-.submit-button:hover {
+.submit:hover {
   background-color: #1a78c2;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submit-button:active {
+.submit:active {
   background-color: #135a91;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-icons {
+.label__icons {
   fill: var(--notblack);
   width: 20px;
   height: 18px;
   position: absolute;
 }
-.icon-position1 {
+.icon--position1 {
   top: 107px;
   left: 55px;
 }
-.icon-position2 {
+.icon--position2 {
   top: 174px;
   left: 55px;
 }
-.icon-position3 {
+.icon--position3 {
   top: 240px;
   left: 52px;
 }
 /* koniec okna modalnego */
 /* Portfolio page */
 
-.btn-style {
+.filter {
   display: flex;
   gap: 8px;
   margin: 0px;
   list-style: none;
   padding: 94px 318px 50px 310px;
 }
-.btn {
+.filter__btn {
   background-color: var(--notwhite);
   border-width: 0;
   height: 38px;
@@ -738,14 +737,14 @@ input:checked + .tick {
   font-family: 'Roboto';
   cursor: pointer;
 }
-.btn:hover,
-.btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--blue);
   color: var(--white);
 }
-.portfolio-element {
+.portfolio {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -753,26 +752,26 @@ input:checked + .tick {
   list-style: none;
   padding: 0 15px 94px;
 }
-.portfolio-item {
+.portfolio__item {
   border-bottom: 1px solid var(--productborder);
   position: relative;
   width: 370px;
   height: 404px;
 }
-.description-info {
+.description--style {
   position: absolute;
   width: 100%;
   height: 294px;
   overflow: hidden;
 }
-.description-animation {
+.description__animation {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   position: relative;
 }
-.description-text {
+.description__text {
   margin: 0;
   padding: 49px 45px 49px 24px;
   font-weight: 400;
@@ -781,15 +780,15 @@ input:checked + .tick {
   letter-spacing: 0.03em;
   color: var(--white);
 }
-.portfolio-item:hover .description-animation {
+.portfolio__item:hover .description__animation {
   transform: translateY(0%);
 }
-.portfolio-item:focus,
-.portfolio-item:hover {
+.portfolio__item:focus,
+.portfolio__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-item-heading {
+.portfolio__item--heading {
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
@@ -799,7 +798,7 @@ input:checked + .tick {
   padding: 20px 24px 4px;
   text-align: left;
 }
-.portfolio-item-text {
+.portfolio__item--text {
   font-size: 16px;
   line-height: 1.875;
   color: var(--grey);
@@ -807,3 +806,4 @@ input:checked + .tick {
   padding: 0 24px 20px;
 }
 /* koniec portfolio page */
+

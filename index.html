@@ -522,8 +522,8 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-button" data-modal-close>
-          <svg class="close-modal-button">
+        <button type="button" class="modal__button" data-modal-close>
+          <svg class="modal__button--close">
             <use
               xlink:href="./images/icons.svg#icon-close-button"
               width="11"
@@ -533,54 +533,54 @@
             ></use>
           </svg>
         </button>
-        <h2 class="modal-heading">Zostaw swoje dane w formularzu poniżej</h2>
+        <h2 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h2>
 
-        <form class="modal-forms">
-          <label for="name-box" class="label-box-heading"> Imie</label>
-          <input id="name-box" type="text" name="username" class="label-boxes" />
-          <svg class="form-icons icon-position1">
+        <form class="modal__forms">
+          <label for="name-box" class="details__heading"> Imie</label>
+          <input id="name-box" type="text" name="username" class="details" />
+          <svg class="label__icons icon--position1">
             <use xlink:href="./images/icons.svg#icon-person-modal" width="12" height="12"></use>
           </svg>
 
-          <label for="tel-box" class="label-box-heading"> Telefon </label>
-          <input id="tel-box" type="text" name="telphone-number" class="label-boxes" />
-          <svg class="form-icons icon-position2">
+          <label for="tel-box" class="details__heading"> Telefon </label>
+          <input id="tel-box" type="text" name="telphone-number" class="details" />
+          <svg class="label__icons icon--position2">
             <use xlink:href="./images/icons.svg#icon-telephone-modal" width="15" height="15"></use>
           </svg>
 
-          <label for="email-box" class="label-box-heading"> Email </label>
-          <input id="emial-box" type="text" name="email" class="label-boxes" />
-          <svg class="form-icons icon-position3">
+          <label for="email-box" class="details__heading"> Email </label>
+          <input id="emial-box" type="text" name="email" class="details" />
+          <svg class="label__icons icon--position3">
             <use xlink:href="./images/icons.svg#icon-envelope-modal" width="18" height="18"></use>
           </svg>
 
-          <label for="text-box" class="label-box-heading"> Komentarz</label>
+          <label for="text-box" class="details__heading"> Komentarz</label>
           <textarea
             id="text-box"
             name="feedback"
             rows="5"
             placeholder="Wprowadź tekst"
-            class="modal-box-text"
+            class="details__comment"
           ></textarea>
 
-          <div class="modal-checkbox">
-            <label for="laws-box" class="laws-style">
+          <div class="checkbox">
+            <label for="laws-box" class="checkbox__label">
               <input
                 id="laws-box"
                 type="checkbox"
                 name="rules"
                 value="laws"
-                class="checkbox-style"
+                class="checkbox--style"
               />
-              <svg class="tick">
+              <svg class="checkbox__image">
                 <use xlink:href="./images/icons.svg#icon-Vector"></use>
               </svg>
-              Oświadczam iż akceptuję <a class="law-text" href="#">Regulamin</a> i
-              <a class="law-text" href="#">Politykę Prywatności</a>.
+              Oświadczam iż akceptuję <a class="checkbox__text" href="#">Regulamin</a> i
+              <a class="checkbox__text" href="#">Politykę Prywatności</a>.
             </label>
           </div>
 
-          <button type="submit" class="submit-button">Wyślij</button>
+          <button type="submit" class="submit">Wyślij</button>
         </form>
       </div>
     </div>
