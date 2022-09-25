@@ -1,4 +1,5 @@
-.clients__heading {
+.clients {
+  &__heading {
     margin: 0;
     font-weight: 700;
     font-size: 36px;
@@ -8,7 +9,7 @@
     padding-top: 94px;
     padding-bottom: 50px;
   }
-  .clients__list {
+  &__list {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -16,18 +17,19 @@
     margin: 0;
     padding: 0 0 94px 0;
   }
-  .clients__link {
+  &__link {
     display: flex;
     width: 155px;
     height: 82px;
   }
-  .clients__logo {
+  &__logo {
     fill: var(--iconcolor);
     border: 1px solid var(--iconcolor);
     border-radius: 4px;
   }
-  .clients__link:hover svg,
-  .clients__link:focus svg {
+  &__link:hover svg,
+  &__link:focus svg {
     fill: var(--blue);
     border: var(--blue) solid 1px;
   }
+}

@@ -1,8 +1,7 @@
- .massmedia {
-    padding-top: 72px;
-    padding-left: 70px;
-  }
-  .massmedia__heading {
+.massmedia {
+  padding-top: 72px;
+  padding-left: 70px;
+  &__heading {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -12,14 +11,14 @@
     margin: 0;
     padding-bottom: 20px;
   }
-  .massmedia__list {
+  &__list {
     display: flex;
     gap: 10px;
     padding: 0;
     margin: 0;
     list-style: none;
   }
-  .massmedia__icon {
+  &__icon {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -27,8 +26,8 @@
     fill: var(--white);
     overflow: hidden;
   }
-  
-  .massmedia__link:focus svg,
-  .massmedia__link:hover svg {
+  &__link:focus svg,
+  &__link:hover svg {
     background-color: var(--blue);
   }
+}

@@ -1,19 +1,19 @@
 .employee__socials {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-  .employee__socials--icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  &--icon {
     width: 44px;
     height: 44px;
     background-color: var(--white);
     border-radius: 50%;
     fill: var(--iconcolor);
     overflow: hidden;
+    &:focus svg,
+    &:hover svg {
+      fill: var(--white);
+      background-color: var(--blue);
+    }
   }
-  .employee__socials--icon:focus svg,
-  .employee__socials--icon:hover svg {
-    fill: var(--white);
-    background-color: var(--blue);
-  }
+}

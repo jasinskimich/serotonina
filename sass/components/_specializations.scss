@@ -1,4 +1,5 @@
-.specializations__heading {
+.specializations {
+  &__heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -7,31 +8,30 @@
     margin: 0 auto;
     padding: 0 424px 50px;
   }
-  .specializations__items {
+  &__items {
     display: flex;
     list-style: none;
     gap: 30px;
     justify-content: center;
     margin: 0;
     padding: 0 15px 94px;
+    &--spacing {
+      margin: 0;
+    }
+    &--size {
+      width: 370px;
+      height: 294px;
+    }
+    &--text {
+      color: var(--white);
+      font-weight: 700;
+      background-color: rgba(47, 48, 58, 0.8);
+      height: 70px;
+      text-align: center;
+      position: relative;
+      text-transform: uppercase;
+      top: -70px;
+      padding: 27px 0;
+    }
   }
-  
-  .specializations__items--spacing {
-    margin: 0;
-  }
-  .specializations__items--size {
-    width: 370px;
-    height: 294px;
-  }
-  
-  .specializations__items--text {
-    color: var(--white);
-    font-weight: 700;
-    background-color: rgba(47, 48, 58, 0.8);
-    height: 70px;
-    text-align: center;
-    position: relative;
-    text-transform: uppercase;
-    top: -70px;
-    padding: 27px 0;
-  }
+}

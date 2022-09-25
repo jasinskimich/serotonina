@@ -8,10 +8,11 @@
     height: 50px;
     font-weight: 700;
     font-size: 16px;
+    &:hover {
+      background-color: #1a78c2;
+    }
+    &:active {
+      background-color: #135a91;
+    }
   }
-  .services__button:hover {
-    background-color: #1a78c2;
-  }
-  .services__button:active {
-    background-color: #135a91;
-  }
+ 

@@ -1,8 +1,7 @@
 .newsletter {
-    margin-top: 72px;
-    padding-left: 77px;
-  }
-  .newsletter__heading {
+  margin-top: 72px;
+  padding-left: 77px;
+  &__heading {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -10,7 +9,7 @@
     text-transform: uppercase;
     color: var(--white);
   }
-  .newsletter__box {
+  &__box {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -22,8 +21,8 @@
     padding-right: 20px;
     color: var(--white);
   }
-  .newsleter__order {
+  &__order {
     display: flex;
     margin-top: 20px;
   }
-  
+}

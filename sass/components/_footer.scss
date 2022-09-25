@@ -1,16 +1,14 @@
 .footer {
-    background-color: var(--darkgrey);
-  }
-  .footer--style {
+  background-color: var(--darkgrey);
+  &--style {
     display: flex;
   }
-  .footer__nav {
+  &__nav {
     padding-top: 66px;
     padding-bottom: 62px;
     padding-left: 15px;
   }
-  
-  .footer__address {
+  &__address {
     display: flex;
     list-style: none;
     flex-direction: column;
@@ -21,7 +19,7 @@
     color: var(--white);
     margin: 0;
   }
-  .footer__contact {
+  &__contact {
     color: var(--footerlinks);
   }
- 
+}

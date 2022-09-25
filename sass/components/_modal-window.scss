@@ -1,14 +1,12 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
-    background-color: var(--white);
-  }
-  
-  .modal__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--white);
+  &__heading {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -19,13 +17,21 @@
     color: var(--notblack);
     padding-top: 40px;
   }
-  .modal__forms {
+  &__forms {
     display: flex;
     flex-direction: column;
     width: 448px;
     margin: 2px auto 0px;
   }
-  .details__heading {
+}
+
+.details {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  outline: none;
+  padding: 0 42px;
+  &__heading {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -35,64 +41,57 @@
     padding-top: 10px;
     padding-bottom: 4px;
   }
-  .details {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    height: 40px;
-    outline: none;
-    padding: 0 42px;
-  }
-  .details:active + svg,
-  .details:focus + svg {
+  &:active + svg,
+  &:focus + svg {
     fill: var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .details:hover {
+  &:hover {
     border: 1px solid var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .details:active,
-  .details:focus {
+  &:active,
+  &:focus {
     border: 2px solid var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 41px;
   }
-  
-  .details__comment {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    height: 120px;
-    padding: 12px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--grey);
-    outline: none;
-    resize: none;
-  }
-  .details__comment:hover {
+}
+
+.details__comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--grey);
+  outline: none;
+  resize: none;
+  &:hover {
     border: 1px solid var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .details__comment:active,
-  .details__comment:focus {
+  &:active,
+  &:focus {
     border: 2px solid var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 11px 15px;
   }
-  
-  .checkbox {
-    display: flex;
-    flex-direction: row;
-    margin: 20px auto 30px;
-    gap: 8px;
-  }
-  .checkbox--style {
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 30px;
+  gap: 8px;
+  &--style {
     appearance: none;
     -webkit-apperance: none;
   }
-  .checkbox__label {
+  &__label {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -100,29 +99,20 @@
     color: var(--grey);
     position: relative;
     padding-left: 20px;
+    &::before {
+      position: absolute;
+      width: 16px;
+      height: 15px;
+      border: 2px solid black;
+      border-radius: 3px;
+      display: block;
+      content: '';
+      left: 0px;
+      top: 3px;
+      cursor: pointer;
+    }
   }
-  .checkbox__label::before {
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    border: 2px solid black;
-    border-radius: 3px;
-    display: block;
-    content: '';
-    left: 0px;
-    top: 3px;
-    cursor: pointer;
-  }
-  input:checked + .tick {
-    display: block;
-    fill: var(--white);
-    border: none;
-    background-color: var(--blue);
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .checkbox__image {
+  &__image {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -130,31 +120,41 @@
     top: 3px;
     display: none;
   }
-  
-  .checkbox__text {
-    color: var(--blue);
-    text-decoration: underline;
-  }
-  .checkbox__text:hover {
+}
+
+.checkbox__text {
+  color: var(--blue);
+  text-decoration: underline;
+  &:hover {
     text-decoration-thickness: 2px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
- 
-  .label__icons {
-    fill: var(--notblack);
-    width: 20px;
-    height: 18px;
-    position: absolute;
-  }
-  .icon--position1 {
+}
+
+input:checked + .checkbox__image {
+  display: block;
+  fill: var(--white);
+  border: none;
+  background-color: var(--blue);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.label__icons {
+  fill: var(--notblack);
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  &--position1 {
     top: 107px;
     left: 55px;
   }
-  .icon--position2 {
+  &--position2 {
     top: 174px;
     left: 55px;
   }
-  .icon--position3 {
+  &--position3 {
     top: 240px;
     left: 52px;
   }
+}

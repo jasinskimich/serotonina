@@ -1,8 +1,6 @@
-.stuff {
-    background-color: var(--notwhite);
-  }
-  
-  .staff__heading {
+.staff {
+  background-color: var(--notwhite);
+  &__heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -11,7 +9,7 @@
     margin: 0;
     padding: 94px 495px 50px;
   }
-  .staff__list {
+  &__list {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -19,13 +17,14 @@
     margin: 0;
     padding: 0 15px 94px;
   }
-  .employee {
-    background-color: var(--white);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  .employee__heading {
+}
+
+.employee {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &__heading {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--notblack);
@@ -35,7 +34,7 @@
     margin: 0;
     padding: 30px 99px 10px;
   }
-  .employee__text {
+  &__text {
     text-align: center;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -44,4 +43,4 @@
     margin: 0 auto;
     padding-bottom: 16px;
   }
- 
+}
