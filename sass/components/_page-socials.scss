@@ -25,9 +25,9 @@
     border-radius: 50%;
     fill: var(--white);
     overflow: hidden;
-  }
-  &__link:focus svg,
-  &__link:hover svg {
-    background-color: var(--blue);
+    &:focus svg,
+    &:hover svg {
+      background-color: var(--blue);
+    }
   }
 }

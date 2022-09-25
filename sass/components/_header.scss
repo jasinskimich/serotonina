@@ -29,7 +29,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
+      @extend .text--blue;
+      @extend .icon--fill;
     }
   }
 }

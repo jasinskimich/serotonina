@@ -5,6 +5,7 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  color: var(--black);
   &--blue {
     color: var(--blue);
   }
@@ -19,4 +20,7 @@
   letter-spacing: 0.03em;
   color: var(--white);
   margin: 0px;
+  &--blue {
+    color: var(--blue);
+  }
 }
