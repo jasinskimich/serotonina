@@ -1,5 +1,8 @@
 .staff {
   background-color: var(--notwhite);
+  &__container {
+    @extend %container;
+  }
   &__heading {
     font-weight: 700;
     font-size: 36px;

@@ -1,16 +1,19 @@
 .services {
   background-color: var(--darkgrey);
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/backgroundimage.jpg) no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+  &__container {
+    @extend %container;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/backgroundimage.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+  }
   &__heading {
     text-align: center;
     letter-spacing: 0.06em;
@@ -21,4 +24,5 @@
     line-height: 1.36363636;
     margin: 0;
   }
+  
 }

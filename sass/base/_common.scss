@@ -11,3 +11,9 @@ img {
     color: var(--blue);
   }
 }
+.icon--fill {
+  &:hover,
+  &:focus {
+    fill: var(--blue);
+  }
+}

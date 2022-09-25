@@ -8,6 +8,9 @@
     margin: 0 auto;
     padding: 0 424px 50px;
   }
+  &__container {
+    @extend %container;
+  }
   &__items {
     display: flex;
     list-style: none;

@@ -1,6 +1,5 @@
 .employee__socials {
-  display: flex;
-  justify-content: center;
+  @extend %displayFlex-justCont;
   gap: 10px;
   margin-bottom: 30px;
   &--icon {

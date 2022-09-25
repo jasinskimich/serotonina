@@ -1,10 +1,12 @@
 .specifications {
+@extend %container;
+&__container{
   display: flex;
   list-style: none;
   gap: 30px;
   justify-content: center;
   margin: 0;
-  padding: 94px 15px;
+  padding: 94px 15px;}
   &__heading {
     color: var(--notblack);
     font-weight: 700;

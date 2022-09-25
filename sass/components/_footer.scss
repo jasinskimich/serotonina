@@ -1,5 +1,8 @@
 .footer {
   background-color: var(--darkgrey);
+  &__container {
+    @extend %container;
+  }
   &--style {
     display: flex;
   }
@@ -21,5 +24,6 @@
   }
   &__contact {
     color: var(--footerlinks);
+    @extend .text--blue;
   }
 }
