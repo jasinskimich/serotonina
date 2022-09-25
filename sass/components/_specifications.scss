@@ -1,0 +1,33 @@
+.specifications {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding: 94px 15px;
+  }
+  
+  .specifications__heading {
+    color: var(--notblack);
+    font-weight: 700;
+    line-height: 1.14285714;
+    text-transform: uppercase;
+    margin: 0px auto;
+    font-size: 14px;
+  }
+  .specifications__text {
+    line-height: 1.71428571;
+    color: var(--grey);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 3px;
+  }
+  .icons__box {
+    background-color: var(--notwhite);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  .icons__box--spacing {
+    margin: 25px 100px;
+  }

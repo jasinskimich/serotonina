@@ -1,0 +1,27 @@
+.footer {
+    background-color: var(--darkgrey);
+  }
+  .footer--style {
+    display: flex;
+  }
+  .footer__nav {
+    padding-top: 66px;
+    padding-bottom: 62px;
+    padding-left: 15px;
+  }
+  
+  .footer__address {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 0px;
+    gap: 9px;
+    padding-top: 20px;
+    font-style: normal;
+    color: var(--white);
+    margin: 0;
+  }
+  .footer__contact {
+    color: var(--footerlinks);
+  }
+ 

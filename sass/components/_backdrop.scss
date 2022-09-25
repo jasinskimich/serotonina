@@ -1,0 +1,14 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition-property: opacity;
+    transition: ease-in-out;
+    transition-duration: 250ms;
+  }
+  .backdrop:active {
+    opacity: 1;
+  }

@@ -645,7 +645,7 @@ img {
   top: 3px;
   cursor: pointer;
 }
-input:checked + .tick {
+input:checked + .checkbox__image {
   display: block;
   fill: var(--white);
   border: none;

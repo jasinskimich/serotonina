@@ -1,0 +1,34 @@
+ .massmedia {
+    padding-top: 72px;
+    padding-left: 70px;
+  }
+  .massmedia__heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  .massmedia__list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .massmedia__icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    fill: var(--white);
+    overflow: hidden;
+  }
+  
+  .massmedia__link:focus svg,
+  .massmedia__link:hover svg {
+    background-color: var(--blue);
+  }
