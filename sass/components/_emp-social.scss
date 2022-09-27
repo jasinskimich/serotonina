@@ -1,6 +1,8 @@
 .employee__socials {
   gap: 10px;
   margin-bottom: 30px;
+  justify-content: center;
+  display: flex;
   &--icon {
     width: 44px;
     height: 44px;

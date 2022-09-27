@@ -48,18 +48,21 @@ img {
   fill: var(--blue);
 }
 
-.footer__container, .clients, .staff__container, .specializations__container, .specifications, .services__container, .header__container {
+.footer__logo, .header__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19230769;
+  letter-spacing: 0.03em;
+}
+
+.footer__container, .clients__container, .staff__container, .specializations__container, .specifications, .services__container, .header__container {
   width: 1200px;
   margin: 0 auto;
 }
 
 .header__logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
   color: var(--black);
 }
 .header__logo--blue {
@@ -67,12 +70,6 @@ img {
 }
 
 .footer__logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1, 19230769;
-  letter-spacing: 0.03em;
   color: var(--white);
   margin: 0px;
 }
@@ -349,6 +346,12 @@ img {
 .employee__socials {
   gap: 10px;
   margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .employee__socials--icon {
   width: 44px;

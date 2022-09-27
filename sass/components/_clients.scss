@@ -1,5 +1,7 @@
 .clients {
-  @extend %container;
+  &__container {
+    @extend %container;
+  }
   &__heading {
     margin: 0;
     font-weight: 700;
