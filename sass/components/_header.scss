@@ -34,6 +34,20 @@
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header__nav {
+    gap: 83px;
+  }
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    position: absolute;
+    right: 15px;
+    top: 21px;
+  }
+}
 
 .nav__link {
   display: flex;
@@ -66,6 +80,11 @@
     &:focus {
       color: var(--blue);
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav__link {
+    gap: 60px;
   }
 }
 
