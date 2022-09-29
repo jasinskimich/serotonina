@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
   margin: 0px;
-  height: 80px;
+  height: 60px;
   &__container {
     @extend %container;
     padding-left: 15px;
@@ -11,7 +11,18 @@
     position: absolute;
     display: flex;
     gap: 93px;
-    top: 24px;
+    top: 16px;
+  }
+  &__menu {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    background-color: var(--white);
+    border:none;
+    &--icon {
+      @extend .icon--fill;
+      cursor: pointer;
+    }
   }
   &__contacts {
     gap: 30px;
@@ -20,6 +31,7 @@
     position: absolute;
     right: 168px;
     top: 32px;
+    display: none;
     &--style {
       color: var(--grey);
       font-weight: 500;

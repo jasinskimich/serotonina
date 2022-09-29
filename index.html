@@ -18,6 +18,9 @@
     />
   </head>
   <body>
+    <!-- <div class="backdrop--menu is-hidden" js-menu-container>
+      <div class="menu"><button type="button" class="" js-close-menu></button></div>
+    </div> -->
     <header class="header">
       <div class="header__container">
         <div class="header__nav">
@@ -32,21 +35,26 @@
             <a href="./index.html" class="nav__link--style">Kontakt </a>
           </nav>
         </div>
-        <div class="header__contacts">
-          <a href="mailto:info@devstudio.com" class="header__contacts--style"
-            ><svg class="header__icons--spacing" width="16" height="12">
-              <use xlink:href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
+        <button type="button" class="header__menu" js-open-menu>
+          <svg class="header__menu--icon" width="24" height="16">
+            <use xlink:href="./images/icons.svg#icon-hamburger-menu"></use>
+          </svg>
+          <div class="header__contacts">
+            <a href="mailto:info@devstudio.com" class="header__contacts--style"
+              ><svg class="header__icons--spacing" width="16" height="12">
+                <use xlink:href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
 
-          <a href="tel:+48111111111" class="header__contacts--style"
-            ><svg class="header__icons--spacing" width="10" height="16">
-              <use xlink:href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111
-          </a>
-        </div>
+            <a href="tel:+48111111111" class="header__contacts--style"
+              ><svg class="header__icons--spacing" width="10" height="16">
+                <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </div>
+        </button>
       </div>
     </header>
     <main>
@@ -70,7 +78,7 @@
             <h2 class="specifications__heading">LOREM IPSUM</h2>
 
             <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nam vel arcu sem. Sed <br> non
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
@@ -82,7 +90,7 @@
             </div>
             <h2 class="specifications__heading">LOREM IPSUM</h2>
             <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nam vel arcu sem. Sed <br> non
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
@@ -94,7 +102,7 @@
             </div>
             <h2 class="specifications__heading">LOREM IPSUM</h2>
             <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nam vel arcu sem. Sed <br> non
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
@@ -106,7 +114,7 @@
             </div>
             <h2 class="specifications__heading">LOREM IPSUM</h2>
             <p class="specifications__text">
-              Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nam vel arcu sem. Sed <br> non
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>

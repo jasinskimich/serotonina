@@ -2,25 +2,26 @@
   @extend %container;
 
   &__container {
-    display: flex;
     list-style: none;
-    gap: 30px;
+    
     justify-content: center;
     margin: 0;
-    padding: 94px 15px;
+    padding: 60px 15px;
   }
   &__item {
-    width: 100%
+    width: 450px;
+    height: 226px;
+    margin: 0 auto;
   }
   &__heading {
-    color: var(--notblack);
     font-weight: 700;
-    line-height: 1.14285714;
-    text-transform: uppercase;
-    margin: 0px auto;
     font-size: 14px;
-    width: 100%;
-    margin: 0;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--notblack);
+    margin: 0 105px 10px;
   }
   &__text {
     line-height: 1.71428571;
@@ -35,10 +36,10 @@
 
 .icons__box {
   background-color: var(--notwhite);
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   &--spacing {
-    margin: 25px 100px;
+    margin: 25px 190px;
   }
 }
