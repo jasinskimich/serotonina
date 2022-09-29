@@ -253,7 +253,7 @@ img {
   padding: 94px 15px;
 }
 .specifications__item {
-  width: 270px;
+  width: 100%;
 }
 .specifications__heading {
   color: var(--notblack);
@@ -262,7 +262,7 @@ img {
   text-transform: uppercase;
   margin: 0px auto;
   font-size: 14px;
-  width: 270px;
+  width: 100%;
   margin: 0;
 }
 .specifications__text {
@@ -271,22 +271,9 @@ img {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 3px;
-  width: 270px;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .specifications__container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .specifications__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .icons__box {
-    margin: 0;
-  }
-}
 .icons__box {
   background-color: var(--notwhite);
   width: 270px;
