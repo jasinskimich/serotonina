@@ -1,6 +1,10 @@
 .newsletter {
-  margin-top: 72px;
-  padding-left: 77px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+ 
+ 
   &__heading {
     font-weight: 700;
     font-size: 14px;
@@ -8,6 +12,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  &__order {
+  margin: 0 auto;
+  flex-direction: column;
   }
   &__box {
     width: 358px;
@@ -20,9 +31,7 @@
     padding-left: 10px;
     padding-right: 20px;
     color: var(--white);
-  }
-  &__order {
-    display: flex;
-    margin-top: 20px;
-  }
+   
+ 
+}
 }

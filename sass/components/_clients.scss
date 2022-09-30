@@ -1,6 +1,7 @@
 .clients {
   &__container {
-    @extend %container;
+    width: 450px;
+    margin: 0 auto;
   }
   &__heading {
     margin: 0;
@@ -14,16 +15,22 @@
   }
   &__list {
     display: flex;
-    list-style: none;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     margin: 0;
     padding: 0 0 94px 0;
+    width: 450px;
+    
+    &--element {
+      width: 210px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
   &__link {
     display: flex;
-    width: 155px;
-    height: 82px;
+    width: 210px;
+    height: 92px;
   }
   &__logo {
     fill: var(--iconcolor);

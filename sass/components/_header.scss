@@ -3,7 +3,6 @@
   margin: 0px;
   height: 60px;
   &__container {
-    @extend %container;
     padding-left: 15px;
   }
 

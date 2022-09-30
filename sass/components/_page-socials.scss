@@ -1,6 +1,5 @@
 .massmedia {
-  padding-top: 72px;
-  padding-left: 70px;
+  
   &__heading {
     font-weight: 700;
     font-size: 14px;
@@ -10,6 +9,8 @@
     color: var(--white);
     margin: 0;
     padding-bottom: 20px;
+    text-align: center;
+    padding-top: 60px;
   }
   &__list {
     display: flex;
@@ -17,6 +18,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    justify-content: center;
   }
   &__icon {
     width: 44px;

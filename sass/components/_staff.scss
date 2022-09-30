@@ -1,24 +1,27 @@
 .staff {
   background-color: var(--notwhite);
   &__container {
-    @extend %container;
+    margin: 0 auto;
+    width: 290px;
   }
+
   &__heading {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
     color: var(--notblack);
-    margin: 0;
-    padding: 94px 495px 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto;
   }
   &__list {
-    display: flex;
     list-style: none;
-    gap: 30px;
-    justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px 94px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -27,13 +30,19 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 290px;
+  height: 622px;
+  &__photo {
+    width: 450px;
+    height: 460px;
+  }
   &__heading {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--notblack);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.1875;
+    line-height: 19px;
     margin: 0;
     padding: 30px 99px 10px;
   }
@@ -42,7 +51,7 @@
     font-weight: 400;
     letter-spacing: 0.03em;
     font-size: 16px;
-    line-height: 1.1875;
+    line-height: 19px;
     margin: 0 auto;
     padding-bottom: 16px;
   }

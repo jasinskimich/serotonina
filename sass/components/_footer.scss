@@ -1,15 +1,12 @@
 .footer {
   background-color: var(--darkgrey);
-  &__container {
-    @extend %container;
-  }
-  &--style {
-    display: flex;
-  }
+  
   &__nav {
-    padding-top: 66px;
-    padding-bottom: 62px;
-    padding-left: 15px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   &__address {
     display: flex;
@@ -21,9 +18,21 @@
     font-style: normal;
     color: var(--white);
     margin: 0;
+    &--style {
+      text-align: center;
+    }
+    &--map {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+    }
   }
   &__contact {
     color: var(--footerlinks);
     @extend .text--blue;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
