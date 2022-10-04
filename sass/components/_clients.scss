@@ -1,6 +1,6 @@
 .clients {
   &__container {
-    width: 450px;
+    width: 290px;
     margin: 0 auto;
   }
   &__heading {
@@ -15,22 +15,18 @@
   }
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
     justify-content: center;
     margin: 0;
     padding: 0 0 94px 0;
-    width: 450px;
-    
-    &--element {
-      width: 210px;
-      flex-basis: calc((100% - 30px) / 2);
-    }
+
   }
   &__link {
     display: flex;
     width: 210px;
     height: 92px;
+    margin: 0 auto;
   }
   &__logo {
     fill: var(--iconcolor);
@@ -41,5 +37,18 @@
   &__link:focus svg {
     fill: var(--blue);
     border: var(--blue) solid 1px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .clients {
+    &__container {
+      width: 450px;
+      margin: 0 auto;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
