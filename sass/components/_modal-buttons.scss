@@ -33,7 +33,9 @@
   height: 50px;
   background-color: var(--blue);
   color: var(--white);
-  margin: 0 auto;
+  position: absolute;
+  bottom: 45px;
+  left: 45px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -53,4 +55,8 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .submit {
+bottom:40px;
+left: 126px;
+  }
 }

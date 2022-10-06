@@ -6,8 +6,8 @@
   left: 0;
   background-color: var(--white);
   transform: translateX(100%);
-  visibility: hidden;
   transition: transform 250ms ease-in-out;
+  z-index: 9999;
   &__nav-list {
     list-style: none;
     font-weight: 500;
@@ -84,8 +84,8 @@
   border: none;
   padding: 0;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 25px;
   &:hover {
     fill: var(--blue);
   }
@@ -95,7 +95,21 @@
 }
 
 .is-open {
-    
-    transform: translateX(0%);
-    visibility: visible;
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .mobile-menu {
+    &__nav-list {
+      left: 40px;
+    }
+    &__contact-list {
+      left: 40px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }

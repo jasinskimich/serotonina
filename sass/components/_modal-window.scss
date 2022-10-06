@@ -89,7 +89,9 @@
 .checkbox {
   display: flex;
   flex-direction: row;
-  margin: 20px auto 30px;
+
+  position: absolute;
+  bottom: 115px;
   gap: 8px;
   &--style {
     appearance: none;
@@ -103,6 +105,7 @@
     color: var(--grey);
     position: relative;
     padding-left: 20px;
+    width: 250px;
     &::before {
       position: absolute;
       width: 16px;
@@ -180,6 +183,11 @@ input:checked + .checkbox__image {
   .details {
     width: 370px;
     padding: 0 42px;
+  }
+  .checkbox {
+    &__label {
+      width: 370px;
+    }
   }
   .label__icons {
     &--position1 {
