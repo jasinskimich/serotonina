@@ -3,7 +3,13 @@
   gap: 8px;
   margin: 0px;
   list-style: none;
-  padding: 94px 318px 50px 310px;
+  flex-wrap: wrap;
+  padding: 60px 0 40px;
+  
+  &__container {
+    max-width: 420px;
+    margin: 0 20px;
+  }
   &__btn {
     background-color: var(--notwhite);
     border-width: 0;

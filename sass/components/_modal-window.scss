@@ -46,6 +46,10 @@
     fill: var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &:active + .details__heading,
+  &:hover + .details__heading {
+    color: var(--blue);
+  }
   &:hover {
     border: 1px solid var(--blue);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -160,4 +164,50 @@ input:checked + .checkbox__image {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    &__heading {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 40px 40px 2px;
+    }
+    &__forms {
+      width: 370px;
+    }
+  }
+  .details {
+    width: 370px;
+    padding: 0 42px;
+  }
+  .label__icons {
+    &--position1 {
+      top: 145px;
+      left: 56px;
+    }
+    &--position2 {
+      top: 212px;
+      left: 54px;
+    }
+    &--position3 {
+      top: 279px;
+      left: 54px;
+    }
+  }
+  .details__comment {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .checkbox {
+    &__label {
+      padding-top: 1px;
+      &::before {
+        top: 0;
+      }
+    }
+    &__image {
+      top: 0;
+    }
+  }
 }
