@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--darkgrey);
-  
+
   &__nav {
     padding-top: 60px;
     display: flex;
@@ -13,19 +13,21 @@
     list-style: none;
     flex-direction: column;
     padding-left: 0px;
-    gap: 9px;
+    gap: 8px;
     padding-top: 20px;
     font-style: normal;
     color: var(--white);
     margin: 0;
     &--style {
       text-align: center;
+      height: 21px;
     }
     &--map {
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
       text-align: center;
+      height: 21px;
     }
   }
   &__contact {
@@ -34,5 +36,18 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    height: 463px;
+    width: 100%;
+    &--style {
+      display: flex;
+      gap: 144px;
+      width: 603px;
+      margin: 0 auto;
+    }
   }
 }

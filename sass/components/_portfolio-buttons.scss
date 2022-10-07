@@ -1,14 +1,14 @@
 .filter {
   display: flex;
+  
   gap: 8px;
-  margin: 0px;
+  margin: 0 auto;
   list-style: none;
   flex-wrap: wrap;
   padding: 60px 0 40px;
-  
+  justify-content: center;
   &__container {
-    max-width: 420px;
-    margin: 0 20px;
+    margin: 0 auto;
   }
   &__btn {
     background-color: var(--notwhite);

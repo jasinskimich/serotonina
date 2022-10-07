@@ -1,5 +1,4 @@
 .massmedia {
-  
   &__heading {
     font-weight: 700;
     font-size: 14px;
@@ -32,4 +31,8 @@
       background-color: var(--blue);
     }
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  
 }

@@ -10,7 +10,7 @@
     line-height: 1.167;
     text-align: center;
     color: var(--notblack);
-    padding-top: 94px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
   &__list {
@@ -19,8 +19,7 @@
     gap: 30px;
     justify-content: center;
     margin: 0;
-    padding: 0 0 94px 0;
-
+    padding: 0 0 60px 0;
   }
   &__link {
     display: flex;
@@ -50,5 +49,15 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients {
+    &__container {
+      width: 450px;
+    }
+    &__list {
+    flex-direction: row;
+  flex-wrap: wrap;}
   }
 }

@@ -104,6 +104,7 @@
     letter-spacing: 0.03em;
     color: var(--grey);
     position: relative;
+    
     padding-left: 20px;
     width: 250px;
     &::before {
@@ -117,6 +118,7 @@
       left: 0px;
       top: 3px;
       cursor: pointer;
+    
     }
   }
   &__image {
@@ -166,7 +168,7 @@ input:checked + .checkbox__image {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   .modal {
     width: 450px;
     height: 609px;

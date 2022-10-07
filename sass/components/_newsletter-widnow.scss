@@ -13,6 +13,7 @@
     text-align: center;
     padding-top: 60px;
     padding-bottom: 20px;
+    pointer-events: none;
   }
   &__order {
     margin: 0 auto;
@@ -32,6 +33,14 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .newsletter {
+    &__box {
+      width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .newsletter {
     &__box {
       width: 450px;

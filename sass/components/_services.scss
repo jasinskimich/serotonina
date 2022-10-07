@@ -26,3 +26,10 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .services {
+    &__container {
+      height: 600px;
+    }
+  }
+}
