@@ -460,6 +460,11 @@ img {
   padding: 27px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .specializations {
+    display: block;
+  }
+}
 .staff {
   background-color: var(--notwhite);
 }
