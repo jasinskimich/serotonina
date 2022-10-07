@@ -1,6 +1,6 @@
 .filter {
   display: flex;
-  
+
   gap: 8px;
   margin: 0 auto;
   list-style: none;
@@ -28,5 +28,10 @@
       background-color: var(--blue);
       color: var(--white);
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding: 94px 0 34px;
   }
 }

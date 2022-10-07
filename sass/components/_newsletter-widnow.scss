@@ -47,3 +47,21 @@
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    padding-left: 78px;
+    &__order {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      gap: 12px;
+    }
+    &__box {
+      width: 358px;
+    }
+    &__heading {
+      text-align: left;
+      padding-top: 72px;
+    }
+  }
+}

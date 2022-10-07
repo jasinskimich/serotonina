@@ -56,8 +56,31 @@
     &__container {
       width: 450px;
     }
+    &__heading {
+      padding-bottom: 30px;
+    }
     &__list {
-    flex-direction: row;
-  flex-wrap: wrap;}
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__heading {
+      padding-top: 94px;
+    }
+    &__container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    &__list {
+      flex-direction: row;
+      padding-bottom: 94px;
+    }
+    &__link {
+      width: 150px;
+      height: 88px;
+    }
   }
 }
