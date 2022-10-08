@@ -713,11 +713,11 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-bottom: 94px;
-    gap: 20px;
+    gap: 30px;
   }
   .clients__link {
-    width: 150px;
-    height: 88px;
+    width: 170px;
+    height: 92px;
   }
 }
 .footer {
