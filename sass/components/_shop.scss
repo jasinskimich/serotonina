@@ -1,0 +1,107 @@
+.shop {
+  margin: 0 auto;
+  width: 280px;
+  &__heading {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    &--text {
+      font-family: 'Cormorant Garamond';
+      font-weight: 300;
+      font-size: 18px;
+    }
+  }
+  &__text-style {
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0;
+    gap: 50px;
+    &--link {
+      text-decoration: none;
+    }
+    &--item {
+      background-color: gray;
+      width: 280px;
+      height: 350px;
+      &:hover {
+        box-shadow: 2px 7px 11px -6px rgba(66, 68, 90, 1);
+      }
+      &:active {
+        box-shadow: 2px 7px 11px -3px rgba(66, 68, 90, 1);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1040px) {
+  .shop {
+    width: 600px;
+    &__list {
+      width: 600px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    &__text-style {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 800px;
+      writing-mode: tb-rl;
+      transform: rotate(-180deg);
+      padding-right: 200px;
+    }
+    &__text {
+      display: block;
+      width: 60px;
+      height: 400px;
+      font-family: 'Anton';
+      font-size: 32px;
+      line-height: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #f72b2b;
+    }
+  }
+}
+@media screen and (min-width: 1040px) and (max-width: 1280px) {
+  .shop {
+    width: 920px;
+    &__list {
+      width: 920px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    &__text-style {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 800px;
+      writing-mode: tb-rl;
+      transform: rotate(-180deg);
+      padding-right: 200px;
+    }
+    &__text {
+      display: block;
+      width: 60px;
+      height: 400px;
+      font-family: 'Anton';
+      font-size: 32px;
+      line-height: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #f72b2b;
+    }
+  }
+}

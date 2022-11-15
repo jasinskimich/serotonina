@@ -1,0 +1,145 @@
+.hero {
+  margin: 100px auto 0;
+  width: 280px;
+  &__menu {
+    display: none;
+  }
+  &__picture {
+    margin-left: 90px;
+    background-color: gray;
+    height: 260px;
+    width: 180px;
+    z-index: 2;
+  }
+  &__text-box {
+    height: 70px;
+    width: 220px;
+    z-index: 4;
+    position: absolute;
+    top: 290px;
+  }
+  &__text {
+    font-family: 'Anton';
+    font-size: 20px;
+    line-height: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    color: #f72b2b;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 640px) {
+  .hero {
+    width: 390px;
+    &__picture {
+      height: 280px;
+      width: 210px;
+      margin-left: 150px;
+    }
+    &__text-box {
+      height: 90px;
+      width: 280px;
+      top: 340px;
+    }
+    &__text {
+      font-family: 'Anton';
+      font-size: 26px;
+      line-height: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1040px) {
+  .hero {
+    margin-top: 140px;
+    width: 600px;
+    &__picture {
+      height: 350px;
+      width: 260px;
+      margin-left: 300px;
+    }
+    &__text-box {
+      height: 90px;
+      width: 400px;
+      top: 440px;
+      margin-left: 100px;
+    }
+    &__text {
+      font-family: 'Anton';
+      font-size: 36px;
+      line-height: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+@media screen and (min-width: 1040px) and (max-width: 1280px) {
+  .hero {
+    margin-top: 140px;
+    width: 900px;
+    display: flex;
+    &__picture {
+      height: 350px;
+      width: 260px;
+      margin-left: 130px;
+    }
+    &__text-box {
+      height: 90px;
+      width: 400px;
+      top: 440px;
+      margin-left: 420px;
+    }
+    &__text {
+      font-family: 'Anton';
+      font-size: 36px;
+      line-height: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    &__menu {
+      width: 440px;
+      display: block;
+      margin: 60px 0 0 70px;
+    }
+    &__menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 170px;
+      justify-content: center;
+      &--item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      &--text {
+        font-family: 'Cormorant Garamond';
+        font-weight: 300;
+        font-size: 18px;
+      }
+    }
+    &__sec-menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &--link {
+        text-decoration: none;
+        color: black;
+        font-family: 'Cormorant Garamond';
+        font-weight: 300;
+        font-size: 18px;
+        &:hover,
+        &:active {
+          color: #f72b2b;
+        }
+      }
+    }
+  }
+}

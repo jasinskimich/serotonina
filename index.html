@@ -23,13 +23,45 @@
       <a href="index.html" class="header__heading--link"
         ><h1 class="header__heading">SEROTONINA.</h1>
       </a>
-      <button type="button" class="header__menu">
+      <button
+        type="button"
+        class="header__menu js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="header__menu--icon" width="32" height="28">
           <use xlink:href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
+      <button type="button" class="cart">
+        <a href="./cart.html">
+          <svg class="cart__icon" width="26" height="23">
+            <use xlink:href="./images/icons.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </button>
     </div>
     <div class="hero">
+      <div class="hero__menu">
+        <ul class="hero__menu-list">
+          <li class="hero__menu-list--item">
+            <span class="hero__menu-list--text">(pl)</span>
+            <ul class="hero__sec-menu-list">
+              <li><a href="#shop1" class="hero__sec-menu-list--link">SKLEP</a></li>
+              <li><a href="#about1" class="hero__sec-menu-list--link">O MNIE</a></li>
+              <li><a href="#contact1" class="hero__sec-menu-list--link">KONTAKT</a></li>
+            </ul>
+          </li>
+          <li class="hero__menu-list--item">
+            <span class="hero__menu-list--text">(en)</span>
+            <ul class="hero__sec-menu-list">
+              <li><a href="#shop1" class="hero__sec-menu-list--link">SHOP</a></li>
+              <li><a href="#about1" class="hero__sec-menu-list--link">ABOUT ME</a></li>
+              <li><a href="#contact1" class="hero__sec-menu-list--link">CONTACT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="hero__picture">
         <!-- img -->
       </div>
@@ -37,38 +69,48 @@
         <p class="hero__text">are you limited by the fear what other people think?</p>
       </div>
     </div>
-    <div class="shop">
+    <div class="scroll__shop" id="shop"><p id="shop1"></p></div>
+    <div class="shop" id="shop">
       <ul class="shop__heading">
         <li class="shop__heading--text">(pl) SKLEP</li>
         <li class="shop__heading--text">(en) SHOP</li>
       </ul>
-      <ul class="shop__list">
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-        <li class="shop__list--item">
-          <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
-        </li>
-      </ul>
+      <div class="shop__style-container">
+        <div class="shop__text-style">
+          <p class="shop__text">are you limited by the fear what other people think?</p>
+        </div>
+        <ul class="shop__list">
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+          <li class="shop__list--item">
+            <a href="product.html" class="shop__list--link"><h4>360' life holder</h4></a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <div class="scroll__about" id="about"><p id="about1"></p></div>
     <div class="about">
       <ul class="about__heading">
         <li class="about__heading--item">(pl) O MNIE</li>
@@ -78,7 +120,14 @@
         <li class="about__list--item">
           (pl)
           <p class="about__list--text">
-            360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            360' life holder360' life hol 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holderder360' life holder360' life holder360' life holder360'
             life holder360' life holder
           </p>
         </li>
@@ -86,12 +135,20 @@
           (en)
           <p class="about__list--text">
             360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
             life holder360' life holder
           </p>
         </li>
       </ul>
     </div>
-    <div class="contact">
+    <div class="scroll__contact" id="contact"><p id="contact1"></p></div>
+    <div class="contact" id="contact">
       <ul class="contact__heading">
         <li class="contact__heading--item">(pl) KONTAKT</li>
         <li class="contact__heading--item">(en) CONTACT</li>
@@ -101,6 +158,11 @@
           (pl)
           <p class="contact__list--text">
             360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
             life holder360' life holder
           </p>
         </li>
@@ -108,12 +170,67 @@
           (en)
           <p class="contact__list--text">
             360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
+            life holder360' life holder 360' life holder360' life holder360' life holder360' life holder360' life holder360'
             life holder360' life holder
           </p>
         </li>
       </ul>
     </div>
     <div class="footer"><p class="footer__text">SEROTONINA. ©,</p></div>
+    <!-- mobile menu -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu__container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg class="mobile-menu__close-button--style" width="30" height="30">
+            <use xlink:href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <a href="index.html" class="header__heading--link"
+          ><h1 class="header__heading">SEROTONINA.</h1>
+        </a>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-list--item">
+              <span class="mobile-menu__nav-list--text">(pl)</span>
+              <ul class="mobile-menu__sec-nav-list">
+                <li><a href="#shop" class="mobile-menu__sec-nav-list--link">SKLEP</a></li>
+                <li><a href="#about" class="mobile-menu__sec-nav-list--link">O MNIE</a></li>
+                <li><a href="#contact" class="mobile-menu__sec-nav-list--link">KONTAKT</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__nav-list--item">
+              <span class="mobile-menu__nav-list--text">(en)</span>
+              <ul class="mobile-menu__sec-nav-list">
+                <li><a href="#shop" class="mobile-menu__sec-nav-list--link">SHOP</a></li>
+                <li><a href="#about" class="mobile-menu__sec-nav-list--link">ABOUT ME</a></li>
+                <li><a href="#contact" class="mobile-menu__sec-nav-list--link">CONTACT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__bottom">
+          <li class="mobile-menu__text-box">
+            <p class="mobile-menu__bottom-text">
+              are you limited by the fear what other people think?
+            </p>
+          </li>
+          <li class="mobile-menu__picture">
+            <!-- img -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

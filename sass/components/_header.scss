@@ -21,177 +21,76 @@
   &__menu {
     position: absolute;
     top: 16px;
-    right: 23px;
+    right: 10px;
     background-color: var(--white);
     border: none;
     &--icon {
       cursor: pointer;
-      &:hover {
+      &:hover,
+      &:active {
         fill: #f72b2b;
       }
     }
   }
 }
-.hero {
-  margin: 80px auto 0;
-  width: 280px;
-  &__picture {
-    margin-left: 90px;
-    background-color: gray;
-    height: 240px;
-    width: 180px;
-    z-index: 2;
-  }
-  &__text-box {
-    height: 70px;
-    width: 220px;
-    z-index: 4;
-    position: absolute;
-    top: 290px;
-  }
-  &__text {
-    font-family: 'Anton';
-    font-size: 20px;
-    line-height: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
-    color: #f72b2b;
-  }
-}
 
-.shop {
-  margin: 150px auto 0;
-  width: 280px;
-  &__heading {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    text-align: center;
-    &--text {
-      font-family: 'Cormorant Garamond';
-      font-weight: 300;
-      font-size: 18px;
+.cart {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 17px;
+  right: 50px;
+  padding: 0;
+  &__icon {
+    fill: black;
+    &:hover,
+    &:active {
+      fill: #f72b2b;
     }
-  }
-  &__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    padding: 0;
-    gap: 50px;
-    &--link {
-      text-decoration: none;
-    }
-    &--item {
-      background-color: gray;
-      width: 280px;
-      height: 350px;
-      &:hover {
-        box-shadow: 2px 7px 11px -6px rgba(66, 68, 90, 1);
-      }
-      &:active {
-        box-shadow: 2px 7px 11px -3px rgba(66, 68, 90, 1);
-      }
-    }
-  }
-}
-
-.about {
-  &__heading {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    margin-top: 100px;
-    padding-left: 30px;
-    &--item {
-      font-family: 'Cormorant Garamond';
-      font-weight: 300;
-      font-size: 18px;
-    }
-  }
-  &__list {
-    list-style: none;
-    padding: 0;
-    &--item {
-      text-align: center;
-      font-family: 'Cormorant Garamond';
-      font-weight: 300;
-      font-size: 18px;
-    }
-    &--text {
-      text-align: left;
-      padding-left: 20px;
-    }
-  }
-}
-.contact {
-  margin-top: 100px;
-  margin-bottom: 60px;
-  &__heading {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-
-    padding-left: 30px;
-    &--item {
-      font-family: 'Cormorant Garamond';
-      font-weight: 300;
-      font-size: 18px;
-    }
-  }
-  &__list {
-    list-style: none;
-    padding: 0;
-    &--item {
-      text-align: center;
-      font-family: 'Cormorant Garamond';
-      font-weight: 300;
-      font-size: 18px;
-    }
-    &--text {
-      text-align: left;
-      padding-left: 20px;
-    }
-  }
-}
-.footer {
-  width: 100%;
-  height: 20px;
-  background-color: black;
-  &__text {
-    color: white;
-    font-size: 10px;
-    font-family: 'GFS Didot';
-    font-weight: 500;
-    padding: 5px 0 0 15px;
-    margin: 0;
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 640px) {
-  .hero {
-    width: 350px;
-    &__picture {
-      height: 260px;
-      width: 210px;
-      margin-left: 130px;
+  .cart {
+    right: 60px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1040px) {
+  .cart {
+    right: 60px;
+    top: 28px;
+  }
+  .header {
+    height: 60px;
+    &__heading {
+      font-size: 36px;
+      padding-top: 10px;
     }
-    &__text-box {
-      height: 90px;
-      width: 280px;
-      top: 305px;
+    &__menu {
+      top: 25px;
     }
-    &__text {
-      font-family: 'Anton';
-      font-size: 26px;
-      line-height: 16px;
-      font-weight: 400;
-      line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1040px) and (max-width: 1280px) {
+  .header {
+    height: 60px;
+    &__heading {
+      font-size: 36px;
+      padding-top: 10px;
+    }
+    &__menu {
+      display: none;
+      visibility: hidden;
+      top: 25px;
+    }
+  }
+  .cart {
+    right: 60px;
+    top: 28px;
+    &__icon {
+      height: 30px;
+      width: 30px;
     }
   }
 }
